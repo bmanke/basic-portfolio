@@ -528,3 +528,36 @@ footer span i {
         bottom: 0px;
     }
 }
+
+.pb-red,
+.pb-red:hover {
+    color: #fff;
+    background-color: red;
+}
+
+.pb-black {
+    background-color: black;
+}
+
+.pb-container {
+    padding: 0.01em 16px;
+    height: 1.5rem;
+}
+
+.pb-round-xlarge {
+    border-radius: 16px;
+}
+
+.pb__fill {
+    transition: width 1s ease-in-out;
+}
+
+@keyframes fillProgress {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: var(--progress-percentage, 0%);
+    }
+}
